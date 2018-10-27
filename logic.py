@@ -16,15 +16,33 @@ class Computer:
 
     def compute_deaths(self, park):
         park_deaths = dict()
-        for animal_type in park:
-            park_deaths[animal_type] = self.die(animal_type)
+        for animal_type in park.animals:
+            park_deaths[animal_type] = self.die(park.animals[animal_type][0], park)
         return park_deaths
 
-    def die(self, animal):
+    @staticmethod
+    def die(animal, park):
+        tot_erb = park.small_erb + park.big_erb
+        tot_carn = park.small_carn + park.big_carn
+        puppy_shield = 0
+
         if animal.diet == "meat":
-            pass
+            if tot_carn < 0.2 * tot_erb:
+                deaths = -(0.1*tot_carn)
+            else:
+                deaths = -(0.3*tot_carn)
         else:
-            pass
+            if animal.size == "big":
+                deaths = -(0.3*park.big_carn)
+            else:
+                deaths = -(0.3*park.small_carn)
+
+        if animal.name[:5] == 'puppy':
+            puppy_shield = 2
+
+        return deaths + puppy_shield
+
+
 
     @staticmethod
     def subtract_deaths(dic1, dic2):
