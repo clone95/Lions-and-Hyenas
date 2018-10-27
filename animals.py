@@ -1,20 +1,11 @@
 
-
-class AbstractFactory(object):
-
-    def __init__(self, animal_factory=None):
-        self.animal_factory = animal_factory
-
-    def generate_exemplar(self):
-        return self.animal_factory()
-
-
 #   Lion  ----------------------------------------------------------------------------
 
 
 class AdultLion(object):
 
     def __init__(self):
+        self.type = "lion"
         self.name = "adult_lion"
         self.age = 2
         self.death = 10
@@ -30,6 +21,7 @@ class AdultLion(object):
 class PuppyLion(object):
 
     def __init__(self):
+        self.type = "lion"
         self.name = "puppy_lion"
         self.age = 0
         self.weight = 50
@@ -46,6 +38,7 @@ class PuppyLion(object):
 class AdultHyena(object):
 
     def __init__(self):
+        self.type = "hyena"
         self.name = "adult_hyena"
         self.age = 2
         self.death = 15
@@ -61,6 +54,7 @@ class AdultHyena(object):
 class PuppyHyena(object):
 
     def __init__(self):
+        self.type = "hyena"
         self.name = "puppy_hyena"
         self.age = 0
         self.weight = 50
@@ -77,6 +71,7 @@ class PuppyHyena(object):
 class AdultZebra(object):
 
     def __init__(self):
+        self.type = "zebra"
         self.name = "adult_zebra"
         self.age = 2
         self.death = 400
@@ -92,6 +87,7 @@ class AdultZebra(object):
 class PuppyZebra(object):
 
     def __init__(self):
+        self.type = "zebra"
         self.name = "puppy_zebra"
         self.age = 0
         self.weight = 50
@@ -108,6 +104,7 @@ class PuppyZebra(object):
 class AdultGnu(object):
 
     def __init__(self):
+        self.type = "gnu"
         self.name = "adult_gnu"
         self.age = 2
         self.death = 20
@@ -123,6 +120,7 @@ class AdultGnu(object):
 class PuppyGnu(object):
 
     def __init__(self):
+        self.type = "gnu"
         self.name = "puppy_gnu"
         self.age = 0
         self.weight = 50
@@ -131,25 +129,3 @@ class PuppyGnu(object):
         self.climate = 22
         self.group_dimension = 80
         self.area_for_animal = 9
-
-
-
-
-
-
-
-
-
-adult_lion_factory = AbstractFactory(AdultLion)
-puppy_lion_factory = AbstractFactory(PuppyLion)
-adult_hyena_factory = AbstractFactory(AdultHyena)
-
-lions = []
-
-for el in range(1, 5):
-    lions.append(adult_lion_factory.generate_exemplar())
-    lions.append(puppy_lion_factory.generate_exemplar())
-    lions.append(adult_hyena_factory.generate_exemplar())
-
-
-print([animal.diet for animal in lions])
