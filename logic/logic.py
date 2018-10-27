@@ -1,4 +1,4 @@
-from animals import *
+from logic.park import *
 
 
 class AbstractFactory(object):
@@ -16,9 +16,23 @@ class Computer:
 
     def compute_deaths(self, park):
         park_deaths = dict()
+
         for animal_type in park.animals:
+            print("______________________________")
+            print("index:", animal_type, len(park.animals[animal_type]))
+
             park_deaths[animal_type] = self.die(park.animals[animal_type][0], park)
-        return park_deaths
+
+            if len(park.animals[animal_type]) <= -park_deaths[animal_type]:
+                park.animals[animal_type] = park.animals[animal_type][:4]
+                print("salvataggio")
+            else:
+                park.animals[animal_type] = park.animals[animal_type][:park_deaths[animal_type]]
+            #print(len(park.animals[animal_type]))
+            #print("--")
+            print("morti: ", park_deaths[animal_type])
+            print("index:", animal_type, len(park.animals[animal_type]))
+        return park
 
     @staticmethod
     def die(animal, park):
@@ -38,17 +52,10 @@ class Computer:
                 deaths = -(0.3*park.small_carn)
 
         if animal.name[:5] == 'puppy':
-            puppy_shield = 2
+            puppy_shield = 5
 
-        return deaths + puppy_shield
+        return int(deaths + puppy_shield)
 
-
-
-    @staticmethod
-    def subtract_deaths(dic1, dic2):
-        for el in dic1:
-            dic1[el] = dic1[el] - dic2[el]
-        return dic1
 
     def compute_births(self, park):
         pass
@@ -57,12 +64,15 @@ class Computer:
         pass
 
     def compute_phase(self, park):
-        deaths = self.compute_deaths(park)
-        park = self.subtract_deaths(park, deaths)
+        animals_after_deaths = self.compute_deaths(park)
+
         # births = self.compute_births(park)
         # park = park + births
         # park = self.compute_survivors(park)
-        return park
+
+        #final_park.init_park()
+        #print(animals_after_deaths)
+        return animals_after_deaths
 
 
 # def calculate_population(animal_list):

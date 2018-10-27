@@ -1,4 +1,7 @@
-from logic import *
+from logic.park import *
+from logic.animals import *
+from logic.logic import *
+
 
 
 # adults animal factory
@@ -11,30 +14,6 @@ adult_lion_factory = AbstractFactory(AdultLion)
 adult_hyena_factory = AbstractFactory(AdultHyena)
 adult_zebra_factory = AbstractFactory(AdultZebra)
 adult_gnu_factory = AbstractFactory(AdultZebra)
-
-
-class Park:
-    def __init__(self, temperature, animals, dimension):
-        self.temperature = temperature
-        self.animals = animals
-        self.big_carn = 0
-        self.small_carn = 0
-        self.big_erb = 0
-        self.small_erb = 0
-        self.dimension = dimension
-
-    def init_park(self):
-        for animal in self.animals:
-            if self.animals[animal][0].size == "big":
-                if self.animals[animal][0].diet == "meat":
-                    self.big_carn += len(self.animals[animal])
-                else:
-                    self.big_erb += len(self.animals[animal])
-            else:
-                if self.animals[animal][0].diet == "meat":
-                    self.small_carn += len(self.animals[animal])
-                else:
-                    self.small_erb += len(self.animals[animal])
 
 
 def anim_gen(*args):
@@ -52,10 +31,21 @@ def anim_gen(*args):
 animal_pool = anim_gen(20, 50, 200, 400, 8, 12, 20, 45)
 park = Park(20, animal_pool, 2500)
 park.init_park()
-print(park.big_carn)
-print(park.big_erb)
-
 comp = Computer()
-a = comp.compute_deaths(park)
-print(a)
+
+
+print(len(park.animals["adult_lion"]))
+
+for a in park.animals:
+    print(len(park.animals[a]))
+a = comp.compute_phase(park)
+print("\n", len(a.animals["adult_lion"]))
+
+b = comp.compute_phase(a)
+print("\n", len(b.animals["adult_lion"]))
+c = comp.compute_phase(b)
+
+
+
+
 
