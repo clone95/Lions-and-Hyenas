@@ -18,20 +18,19 @@ class Computer:
         park_deaths = dict()
 
         for animal_type in park.animals:
-            print("______________________________")
-            print("index:", animal_type, len(park.animals[animal_type]))
+            # print("______________________________")
+            # print("index:", animal_type, len(park.animals[animal_type]))
 
             park_deaths[animal_type] = self.die(park.animals[animal_type][0], park)
 
             if len(park.animals[animal_type]) <= -park_deaths[animal_type]:
-                park.animals[animal_type] = park.animals[animal_type][:4]
-                print("salvataggio")
+                park.animals[animal_type] = park.animals[animal_type][:1]
             else:
                 park.animals[animal_type] = park.animals[animal_type][:park_deaths[animal_type]]
-            #print(len(park.animals[animal_type]))
-            #print("--")
-            print("morti: ", park_deaths[animal_type])
-            print("index:", animal_type, len(park.animals[animal_type]))
+            # print(len(park.animals[animal_type]))
+            # print("--")
+            # print("morti: ", park_deaths[animal_type])
+            # print("index:", animal_type, len(park.animals[animal_type]))
         return park
 
     @staticmethod
@@ -44,10 +43,10 @@ class Computer:
             if tot_carn < 0.2 * tot_erb:
                 deaths = -(0.1*tot_carn)
             else:
-                deaths = -(0.3*tot_carn)
+                deaths = -(0.1*tot_carn)
         else:
             if animal.size == "big":
-                deaths = -(0.3*park.big_carn)
+                deaths = -(0.2*park.big_carn)
             else:
                 deaths = -(0.3*park.small_carn)
 
@@ -55,7 +54,6 @@ class Computer:
             puppy_shield = 5
 
         return int(deaths + puppy_shield)
-
 
     def compute_births(self, park):
         pass
