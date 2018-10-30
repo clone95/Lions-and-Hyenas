@@ -4,7 +4,7 @@
 I made this project to practice the Design Pattern theory, because just the degree course was only theoretical and i think that the "learn by doing" way is far more effective to get into things. The structure of the project involves deeply the use of the Abstract Factory pattern, concretizing in the Factory Method pattern.
 
 ## What?
-I imagined a virtual Savanna environment, with animal playing around inside (i mean, killing each other in the racef for survival).
+I imagined a virtual Savanna environment, with animal playing around inside (i mean, killing each other in the race for survival).
 The first thing i did was a research about the bioma itself, and in particular i was looking for a group of species that truly interact each other in the real world.
 During this journey i finally found an interesting micro-system (because, of course, this model is a super-semplification of the reality)
 that was fitting my needs.
