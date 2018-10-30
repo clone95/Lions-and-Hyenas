@@ -24,12 +24,13 @@ Note that populations tend to grow fast, if the conditions are favorable, thus f
 
 I attach screenshots from some interesting runs.
 
-![Figure 1-1](https://raw.github.com/clone95/Projection-binary-tree/master/s1.PNG "s1") 
+![Figure 1-1](https://raw.github.com/clone95/Lions-and-Hyenas/screenshots/1.PNG "1") 
 
 
 
 
 
+        
 
 
 Not every lion is a King.
