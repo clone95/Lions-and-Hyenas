@@ -1,7 +1,7 @@
 # Lions-and-Hyenas
 
 ## Why?
-I made this project to practice the Design Pattern theory, because just the degree course was only theoretical and i think that the "learn by doing" way is far more effective to get into things. The structure of the project involves deeply the use of the Abstract Factory pattern, concretizing in the Factory Method pattern.
+I made this project to practice the Design Pattern theory, because the degree course was only theoretical and i think that the "learn by doing" way is far more effective to get into things. The structure of the project involves deeply the use of the Abstract Factory pattern, concretizing in the Factory Method pattern.
 
 ## What?
 I imagined a virtual Savanna environment, with animal playing around inside (i mean, killing each other in the race for survival).
