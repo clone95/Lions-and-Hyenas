@@ -30,7 +30,7 @@ This is not surprending: in fact they fight a lot between them and they share th
 
 ![Figure 1-1](https://raw.github.com/clone95/Lions-and-Hyenas/master/1.PNG "1") 
 
-Here we notice he important phenomenon of the scarcity - aboundance of resources: when herbivores populations decrease, also carnivores populations do. When they rise, also they do.
+Here we notice the important phenomenon of the scarcity / aboundance of resources: when herbivores populations decrease, also carnivores populations do. When herbivores grow, also they do.
 
 ![Figure 1-1](https://raw.github.com/clone95/Lions-and-Hyenas/master/2.PNG "2") 
 
