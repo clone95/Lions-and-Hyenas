@@ -42,8 +42,3 @@ We canalso see that the Hyenas number cause not small problems to Zebras, rapidl
 
 
 
-
-
-       .
-
-
