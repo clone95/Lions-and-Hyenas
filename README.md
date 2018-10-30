@@ -32,12 +32,12 @@ This is not surprending: in fact they fight a lot between them and they share th
 
 Here we notice he important phenomenon of the scarcity - aboundance of resources: when herbivores populations decrease, also carnivores populations do. When they rise, also they do.
 
-![Figure 1-1](https://raw.github.com/clone95/Lions-and-Hyenas/master/1.PNG "2") 
+![Figure 1-1](https://raw.github.com/clone95/Lions-and-Hyenas/master/2.PNG "2") 
 
 Here we have a bit crazy behavior of the populations, with the Hyena intensively following the Lions Trend in the end, but before that they followed the vanilla behavior (inverse proportionality).
 We canalso see that the Hyenas number cause not small problems to Zebras, rapidly declining when Hyenas population spreads.
 
-![Figure 1-1](https://raw.github.com/clone95/Lions-and-Hyenas/master/1.PNG "8") 
+![Figure 1-1](https://raw.github.com/clone95/Lions-and-Hyenas/master/8.PNG "8") 
 
 
 
