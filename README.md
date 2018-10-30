@@ -24,7 +24,7 @@ Note that populations tend to grow fast, if the conditions are favorable, thus f
 
 I attach screenshots from some interesting runs.
 
-![Figure 1-1](https://raw.github.com/clone95/Lions-and-Hyenas/master/1.PNG "1") 
+![Figure 1-1](https://raw.github.com/clone95/Lions-and-Hyenas/screenshots/master/1.PNG "1") 
 
 
 
