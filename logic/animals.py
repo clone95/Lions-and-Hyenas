@@ -1,3 +1,14 @@
+# Each animal has
+# name
+# initial age(2 for adults, 0for puppies)
+# death --> average age of death by oldness
+# weight
+# size
+# diet
+# ideal climate
+# avg group dimension
+# avg puppies number each age
+# area need by a single exemplar.
 
 #   Lion  ----------------------------------------------------------------------------
 
@@ -8,7 +19,7 @@ class AdultLion(object):
         self.type = "lion"
         self.name = "adult_lion"
         self.age = 2
-        self.death = 10
+        self.death = 15
         self.weight = 200
         self.size = "big"
         self.diet = "meat"
@@ -74,7 +85,7 @@ class AdultZebra(object):
         self.type = "zebra"
         self.name = "adult_zebra"
         self.age = 2
-        self.death = 400
+        self.death = 25
         self.weight = 50
         self.size = "big"
         self.diet = "plants"

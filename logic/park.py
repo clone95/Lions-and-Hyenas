@@ -8,6 +8,8 @@ class Park:
         self.small_erb = 0
         self.dimension = dimension
 
+
+# count how many animals of each "big/small", eating "meat/plants"
     def init_park(self):
         for animal in self.animals:
             if self.animals[animal][0].size == "big":
