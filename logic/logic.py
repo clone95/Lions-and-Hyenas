@@ -3,7 +3,7 @@ import random
 import numpy
 
 
-# here i follow the Abstract factory Pattern in order to create the several animal factories that i'll need
+# here i follow the Abstract factory Pattern in order to create the several animal factories that i need
 
 class AbstractFactory(object):
 
@@ -30,7 +30,7 @@ class Computer:
                 park_deaths[animal_type] = self.die(park.animals[animal_type][0], park)
                 for dead in range(0, park_deaths[animal_type]):
                     if len(park.animals[animal_type]) > 20:
-                        park.animals[animal_type].pop()         # each fight that kill animal
+                        park.animals[animal_type].pop()         # each fight that kills animal
 
         return park
 
