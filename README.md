@@ -12,7 +12,7 @@ The program wants to simulate the changes in populations during the time.
 It wasn't a random animal choice, in fact we have two carnivores and two herbivores, with different sizes and habits, that really interact in the African Savanna.
 
 The inspiration for the choice came from this video   (2 min)  -->   https://www.youtube.com/watch?v=_t1cHIgYFWo
-
+ 
 The subtle tension and precise balance with which the two species relate to each other is impressive. Everyone knows their place in the food chain, and which is the final line that triggers the fight in front of the carcass of a prey.
 So, not every lion is also a King.
 
